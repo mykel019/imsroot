@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+                      
+                      <configSections>
+                        <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+                        <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
+                        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                          <section name="APOS.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+                        </sectionGroup>
+                      </configSections>
+                      <runtime>
+                        <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+                          <probing privatePath="dlls"/>
+                        </assemblyBinding>
+                      </runtime>
+                      <startup>
+                        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.1"/>
+                      </startup>
+                      <connectionStrings>
+                        <add name="AContext" providerName="System.Data.SqlClient" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=ADb;Integrated Security=True;"/>
+                        <!--<add name="AContext" providerName="System.Data.SqlClient" connectionString="Data Source=(Localdb)\MSSQLLocalDb;Initial Catalog=ADb;Integrated Security=True;" />-->
+                      </connectionStrings>
+                      <entityFramework>
+                        <defaultConnectionFactory type="System.Data.Entity.Infrastructures.SqlConnectionFactory, EntityFramework"/>
+                        <providers>
+                          <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer"/>
+                        </providers>
+                      </entityFramework>
+                      <userSettings>
+                        <APOS.Properties.Settings>
+                          <setting name="OR_FORMAT" serializeAs="String">
+                            <value>000000000000</value>
+                          </setting>
+                          <setting name="TR_FORMAT" serializeAs="String">
+                            <value>000000000000</value>
+                          </setting>
+                          <setting name="VAT" serializeAs="String">
+                            <value>12</value>
+                          </setting>
+                          <setting name="MAX_PAYMENT" serializeAs="String">
+                            <value>2</value>
+                          </setting>
+                          <setting name="LOG_USER" serializeAs="String">
+                            <value>0</value>
+                          </setting>
+                          <setting name="DEFAULT_PRINTER" serializeAs="String">
+                            <value/>
+                          </setting>
+                          <setting name="CODE" serializeAs="String">
+                            <value>sdf</value>
+                          </setting>
+                        </APOS.Properties.Settings>
+                      </userSettings>
+                    </configuration>

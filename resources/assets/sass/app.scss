@@ -1,0 +1,220 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.search{
+    height: 60px;
+}
+.search-wrapper{
+    float: left;
+    width: 300px;
+}
+
+.searchSpinner{ 
+    background-image:url('/img/text-loader.gif');
+    background-repeat:no-repeat;
+    background-position: right 10px center;
+}
+
+.image-upload{
+    cursor: pointer;
+}
+
+.img-loader{
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 180px;
+}
+
+.deleted-row{
+    background:#ffcccc;border:4px solid white;
+}
+
+.active-row{
+    background:#b3ffb3;border:4px solid white;
+}
+
+.widgets-wrapper{
+    margin-top: 65px;
+
+    .hint{
+        color:#A5A5A5;
+    }
+}
+
+.action-buttons{
+    text-align: right;
+    width:150px;
+
+    .btn-group{
+
+//        display: none;
+    }
+}
+
+.sub-panel tr:hover{
+
+    .action-buttons{
+        .btn-group{
+//            display: inline-block;
+        }
+    }
+}
+
+
+.error-msg{
+    color: #F44336;
+}
+
+.badge-link{
+    background-color: #2196F3;
+}
+
+.badge-link:hover{
+    background-color: gray;
+}
+
+.alert-notification-failed,
+.alert-notification-success{
+    display: none;
+    border-radius: 0;
+    width: 100%;
+    position: absolute;     
+    text-align: center;
+    z-index: 999;
+}
+
+.required{
+    color: #F44336;
+}
+
+
+#price_reg_disc,
+#price_ret_disc,
+#price_ws_disc{
+    width: 100px;
+}
+
+
+/* SETTINGS */
+ul.settings-modules{
+    li{
+        padding: 3px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}
+
+
+/*BREADCRUMBS*/
+.breadcrumb {
+    list-style: none;
+    overflow: hidden;
+    font: 15px Helvetica, Arial, Sans-Serif;
+    background-color:#fff;
+    padding:0;
+    margin-bottom: 10px;
+}
+.breadcrumb li {
+    float: left;
+}
+.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0 10px 55px;
+    background: brown;                   /* fallback color */
+    background: hsla(34,85%,35%,1);
+    position: relative;
+    display: block;
+    float: left;
+}
+.breadcrumb li a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid hsla(34,85%,35%,1);
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+.breadcrumb li a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+.breadcrumb li:first-child a {
+    padding-left: 10px;
+}
+.breadcrumb li:nth-child(2) a       { background:        hsla(34,85%,45%,1); }
+.breadcrumb li:nth-child(2) a:after { border-left-color: hsla(34,85%,45%,1); }
+.breadcrumb li:nth-child(3) a       { background:        hsla(34,85%,55%,1); }
+.breadcrumb li:nth-child(3) a:after { border-left-color: hsla(34,85%,55%,1); }
+.breadcrumb li:nth-child(4) a       { background:        hsla(34,85%,65%,1); }
+.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(34,85%,65%,1); }
+.breadcrumb li:nth-child(5) a       { background:        hsla(34,85%,75%,1); }
+.breadcrumb li:nth-child(5) a:after { border-left-color: hsla(34,85%,75%,1); }
+.breadcrumb li:last-child a {
+    background: white !important;
+    color: black;
+    pointer-events: none;
+    cursor: default;
+}
+.breadcrumb li:last-child a:after { border: 0; }
+.breadcrumb li a:hover { background: hsla(34,85%,25%,1); }
+.breadcrumb li a:hover:after { border-left-color: hsla(34,85%,25%,1) !important; }
+/*END OF BREADCRUMBS*/
+
+
+
+/* form INNER PANELS */
+.inner-panel{
+    border-radius: 5px;
+    border : 2px solid #00BCD4;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+    .ip-title{
+        background-color: #fff;
+        padding: 10px;
+        color: #666666;
+        margin-top: -35px;
+        font-size: 14px;
+        font-weight: bold;
+        padding-left: 12px;
+        padding-right: 12px;
+        position: absolute; 
+    }
+
+    .ip-body{
+        padding-top: 16px;
+    }
+}       
+
+
+
+.widget-statistics{
+    .title{
+        vertical-align: middle;
+    }
+
+    .amount{
+        font-size:20px;
+        text-align: right;
+        font-weight:bold;
+    }
+}
